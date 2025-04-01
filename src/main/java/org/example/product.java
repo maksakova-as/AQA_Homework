@@ -1,4 +1,5 @@
 package org.example;
+
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 
@@ -22,14 +23,13 @@ public class product {
 
     }
 
-    public void getInfo(){
+    public void getInfo() {
         DateTimeFormatter dateFormatter = DateTimeFormatter.ofPattern("dd.MM.yyyy");
         System.out.println("name = " + name + " productionDate = " + productionDate +
                 " manufacturer = " + manufacturer + " country = " + country + " price = " + price +
                 " status = " + status);
 
     }
-
 
 
 }
