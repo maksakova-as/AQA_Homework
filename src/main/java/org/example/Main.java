@@ -67,7 +67,7 @@ public class Main {
         int value = 101;
         if (value <= 0) {
             System.out.println("Красный");
-        } else if (value > 0 && value <= 100) {
+        } else if (value <= 100) {
             System.out.println("Жёлтый");
         } else {
             System.out.println("Зелёный");
@@ -87,8 +87,7 @@ public class Main {
 
     public static boolean taskfive(int a, int b) {
         int sum = a + b;
-        if (sum >= 10 && sum <= 20) return true;
-        return false;
+        return sum >= 10 && sum <= 20;
     }
 
     public static void tasksix(int number) {
@@ -100,27 +99,18 @@ public class Main {
     }
 
     public static boolean taskseven(int number) {
-        if (number >= 0) return false;
-        return true;
+        return number < 0;
     }
 
     public static void taskeight(String text, int times) {
-        int i = 0;
-        while (i < times) {
-            System.out.println(text);
-            i++;
+        for (int i = 0; i < times; i++) {
+            System.out.print(text + " ");
 
         }
     }
 
     public static boolean tasknine(int year) {
-        if (year % 400 == 0) {
-            return true;
-        } else if (year % 100 == 0) {
-            return false;
-        } else {
-            return year % 4 == 0;
-        }
+        return (year % 400 == 0) || (year % 100 != 0 && year % 4 == 0);
 
     }
 
@@ -157,7 +147,7 @@ public class Main {
 
     }
 
-    public static void taskthirteen(int[][]matrix) {
+    public static void taskthirteen(int[][] matrix) {
         int size = 5;
         for (int i = 0; i < size; i++) {
             matrix[i][i] = 1;
@@ -174,7 +164,8 @@ public class Main {
         }
 
     }
-    public static int[] taskfourteen(int len, int initialValue){
+
+    public static int[] taskfourteen(int len, int initialValue) {
         int[] array = new int[len];
         for (int i = 0; i < len; i++) {
             array[i] = initialValue;
