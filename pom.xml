@@ -5,7 +5,11 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>org.example</groupId>
+<<<<<<< HEAD
     <artifactId>Lesson_11_2</artifactId>
+=======
+    <artifactId>Lesson_11</artifactId>
+>>>>>>> 6b611d36ef9e99f7539a70f4eaf04236953d394a
     <version>1.0-SNAPSHOT</version>
 
     <properties>
